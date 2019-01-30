@@ -8,6 +8,12 @@ be displayed on the chart.
 
 The program requires to have python3 and numpy python package installed, because it runs python script
 in a Java Runtime
+
+## Screenshots
+![Screenshot](s1.png)
+
+![Screenshot](s2.png)
+
 ```
 
 ```

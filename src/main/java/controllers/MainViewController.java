@@ -121,8 +121,11 @@ public class MainViewController {
         beginX.clear();
         endX.clear();
         steps.clear();
-        timeline.stop();
-        series.getData().clear();
+
+        if(timeline != null)
+            timeline.stop();
+        if(series != null)
+            series.getData().clear();
 
     }
 
