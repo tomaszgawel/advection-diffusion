@@ -1,0 +1,25 @@
+.root {
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-border-style: solid;
+    -fx-text-alignment: center;
+    -fx-border-color: #00AEEE;
+    -fx-background-color: #00BFFF;
+}
+
+.button:hover {
+    -fx-border-color: #00BFFF;
+    -fx-background-color: #00AEEE;
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+

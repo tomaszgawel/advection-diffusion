@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TitledPane animated="false" collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="890.0" stylesheets="@main_layout.css" text="Advection" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <LineChart fx:id="chart" prefHeight="585.0" prefWidth="633.0" BorderPane.alignment="CENTER">
+              <xAxis>
+                <NumberAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </center>
+         <left>
+            <VBox alignment="CENTER" prefHeight="566.0" prefWidth="232.0" spacing="45.0" BorderPane.alignment="CENTER_LEFT">
+               <children>
+                  <TextField fx:id="n" promptText="Amount of points">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin></TextField>
+                  <TextField fx:id="dt" promptText="Δt">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="lambda" promptText="λ">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="beginX" promptText="Beginning of x axis">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="endX" promptText="End of x axis">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="steps" promptText="Steps">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                     <children>
+                        <Button fx:id="calculate" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#calculateAction" prefWidth="90.0" text="Calculate" />
+                        <Button fx:id="clear" mnemonicParsing="false" onAction="#clearAction" prefWidth="90.0" text="Clear" />
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+      </BorderPane>
+   </content>
+</TitledPane>
